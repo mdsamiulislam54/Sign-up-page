@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+
+body{
+    background-color: var(--Blueberry) ;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --Turquoise:#55efc4;
+    --Blueberry:#5581ef;
+    --bluegreen:#6aef55;
+}
+
+.row{
+    width: 1120px;
+    height: 70vh;
+    /* background-color: var(--Blueberry); */
+    margin: 0 auto;
+
+}
+.sign-up-area{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   
+}
+.sign-up-area-1{
+    background-image: url(img/tree-1702029_1280.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 100px 0px;
+    padding: 40px 20px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   width: 40%;
+   animation: treeshow;
+   animation-duration: 3s;
+}
+.form-1{
+    background-color: rgb(255, 255,255,0.2);
+    padding: 50px 10px;
+    border-radius: 20px;
+    border-left: 1px solid var(--bluegreen);
+}
+.form-1 h3{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0px 30px 0px;
+   font-weight: 800;
+   animation: treeshow1 forwards;
+   animation-duration: 3s;
+  
+    
+
+}
+.form-1 h1{
+    text-align: center;
+    line-height: 24px;
+    text-shadow: #6aef55;
+    font-weight: 800;
+    padding:40px 0px;
+    font-size: 40px;
+    animation: treeshow forwards ;
+    animation: treeshow1 forwards;
+    animation-duration: 3s;
+
+   
+}
+.form-1 input{
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: all linear 0.4s;
+   
+}
+.form-1 input:hover{
+    background-color: var(--bluegreen);
+}
+input:focus{
+    outline: 0;
+}
+.sign-up-area-2{
+   
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+#sign-up-area-2{
+   background-image: url(img/tree-1702029_1280.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 100px 0px;
+    padding: 40px 20px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   width: 40%;
+   display: none;
+   animation: treeshow2 forwards ;
+   animation-duration: 3s;
+   opacity: 0;
+}
+
+
+.form-2{
+    background-color: rgb(255, 255,255,0.2);
+    padding: 50px 10px;
+    border-radius: 20px;
+    border-left: 5px solid var(--bluegreen);
+}
+.form-2 input{
+    text-decoration: none;
+   padding: 0px 10px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: all linear 0.4s;
+   
+}
+.form-2 a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+ 
+}
+.sign-btn1{
+    width: 100%;
+   padding: 15px 0px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: all linear 0.4s;
+}
+.sign-btn1:hover{
+    background-color: var(--bluegreen);
+}
+.sign-btn2{
+    font-size: 18px;
+    animation: treeshow1 forwards;
+    animation-duration: 3s;
+
+}
+.sign-btn3{
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    transition: all liner 0.4s;
+
+}
+.sign-btn3:hover{
+    background-color: var(--bluegreen);
+    color: #fff;
+}
+.sign-btn3 span i{
+    font-size: 30px;
+    color: var(--Turquoise);
+
+}
+.form-2 p{
+    text-align: center;
+    font-size: 16px;
+    animation: treeshow1 forwards;
+    animation-duration: 3s;
+
+
+}
+.form-2 p a{
+    color: var(--Turquoise);
+    font-size: 18px;
+}
+/* ====animation area */
+
+@keyframes treeshow{
+    0%{
+        transform: translateY(-300px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes treeshow1{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes treeshow2{
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
